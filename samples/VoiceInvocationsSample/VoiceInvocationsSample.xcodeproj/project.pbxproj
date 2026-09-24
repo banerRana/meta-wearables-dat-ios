@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		VI01000000000001 /* VoiceInvocationsSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000002 /* VoiceInvocationsSampleApp.swift */; };
+		VI01000000000002 /* QueuedInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000003 /* QueuedInvocation.swift */; };
+		VI01000000000003 /* VoiceInvocationsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000004 /* VoiceInvocationsStore.swift */; };
+		VI01000000000004 /* DebugMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000005 /* DebugMenuViewModel.swift */; };
+		VI01000000000005 /* WearablesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000006 /* WearablesViewModel.swift */; };
+		VI01000000000006 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000007 /* DebugMenuView.swift */; };
+		VI01000000000007 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000008 /* HomeScreenView.swift */; };
+		VI01000000000008 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI02000000000009 /* MainAppView.swift */; };
+		VI01000000000009 /* MockDeviceKitSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI0200000000000A /* MockDeviceKitSheet.swift */; };
+		VI0100000000000A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI0200000000000B /* RegistrationView.swift */; };
+		VI0100000000000B /* VoiceInvocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = VI0200000000000C /* VoiceInvocationView.swift */; };
+		VI0100000000000C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = VI0200000000000D /* Assets.xcassets */; };
+		VI0100000000000D /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = VI0A000000000001 /* MWDATCore */; };
+		VI0100000000000E /* MWDATMockDevice in Frameworks */ = {isa = PBXBuildFile; productRef = VI0A000000000002 /* MWDATMockDevice */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		VI02000000000001 /* VoiceInvocationsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceInvocationsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		VI02000000000002 /* VoiceInvocationsSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInvocationsSampleApp.swift; sourceTree = "<group>"; };
+		VI02000000000003 /* QueuedInvocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedInvocation.swift; sourceTree = "<group>"; };
+		VI02000000000004 /* VoiceInvocationsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInvocationsStore.swift; sourceTree = "<group>"; };
+		VI02000000000005 /* DebugMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuViewModel.swift; sourceTree = "<group>"; };
+		VI02000000000006 /* WearablesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WearablesViewModel.swift; sourceTree = "<group>"; };
+		VI02000000000007 /* DebugMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuView.swift; sourceTree = "<group>"; };
+		VI02000000000008 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		VI02000000000009 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		VI0200000000000A /* MockDeviceKitSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeviceKitSheet.swift; sourceTree = "<group>"; };
+		VI0200000000000B /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		VI0200000000000C /* VoiceInvocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInvocationView.swift; sourceTree = "<group>"; };
+		VI0200000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		VI0200000000000E /* VoiceInvocationsSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceInvocationsSample.entitlements; sourceTree = "<group>"; };
+		VI0200000000000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		VI05000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				VI0100000000000D /* MWDATCore in Frameworks */,
+				VI0100000000000E /* MWDATMockDevice in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		VI03000000000001 = {
+			isa = PBXGroup;
+			children = (
+				VI03000000000003 /* VoiceInvocationsSample */,
+				VI03000000000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		VI03000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				VI02000000000001 /* VoiceInvocationsSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		VI03000000000003 /* VoiceInvocationsSample */ = {
+			isa = PBXGroup;
+			children = (
+				VI03000000000004 /* Store */,
+				VI03000000000005 /* ViewModels */,
+				VI03000000000006 /* Views */,
+				VI0200000000000D /* Assets.xcassets */,
+				VI0200000000000E /* VoiceInvocationsSample.entitlements */,
+				VI02000000000002 /* VoiceInvocationsSampleApp.swift */,
+				VI0200000000000F /* Info.plist */,
+			);
+			path = VoiceInvocationsSample;
+			sourceTree = "<group>";
+		};
+		VI03000000000004 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				VI02000000000003 /* QueuedInvocation.swift */,
+				VI02000000000004 /* VoiceInvocationsStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		VI03000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				VI02000000000005 /* DebugMenuViewModel.swift */,
+				VI02000000000006 /* WearablesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		VI03000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				VI02000000000007 /* DebugMenuView.swift */,
+				VI02000000000008 /* HomeScreenView.swift */,
+				VI02000000000009 /* MainAppView.swift */,
+				VI0200000000000A /* MockDeviceKitSheet.swift */,
+				VI0200000000000B /* RegistrationView.swift */,
+				VI0200000000000C /* VoiceInvocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		VI04000000000001 /* VoiceInvocationsSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = VI07000000000001 /* Build configuration list for PBXNativeTarget "VoiceInvocationsSample" */;
+			buildPhases = (
+				VI05000000000001 /* Sources */,
+				VI05000000000002 /* Frameworks */,
+				VI05000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceInvocationsSample;
+			packageProductDependencies = (
+				VI0A000000000001 /* MWDATCore */,
+				VI0A000000000002 /* MWDATMockDevice */,
+			);
+			productName = VoiceInvocationsSample;
+			productReference = VI02000000000001 /* VoiceInvocationsSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		VI08000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					VI04000000000001 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = VI07000000000002 /* Build configuration list for PBXProject "VoiceInvocationsSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = VI03000000000001;
+			packageReferences = (
+				VI09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */,
+			);
+			productRefGroup = VI03000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				VI04000000000001 /* VoiceInvocationsSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		VI05000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				VI0100000000000C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		VI05000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				VI01000000000001 /* VoiceInvocationsSampleApp.swift in Sources */,
+				VI01000000000002 /* QueuedInvocation.swift in Sources */,
+				VI01000000000003 /* VoiceInvocationsStore.swift in Sources */,
+				VI01000000000004 /* DebugMenuViewModel.swift in Sources */,
+				VI01000000000005 /* WearablesViewModel.swift in Sources */,
+				VI01000000000006 /* DebugMenuView.swift in Sources */,
+				VI01000000000007 /* HomeScreenView.swift in Sources */,
+				VI01000000000008 /* MainAppView.swift in Sources */,
+				VI01000000000009 /* MockDeviceKitSheet.swift in Sources */,
+				VI0100000000000A /* RegistrationView.swift in Sources */,
+				VI0100000000000B /* VoiceInvocationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		VI06000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VoiceInvocationsSample/VoiceInvocationsSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = VoiceInvocationsSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meta.wearables.external.VoiceInvocationsSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		VI06000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VoiceInvocationsSample/VoiceInvocationsSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = VoiceInvocationsSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meta.wearables.external.VoiceInvocationsSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		VI06000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		VI06000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		VI07000000000001 /* Build configuration list for PBXNativeTarget "VoiceInvocationsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				VI06000000000001 /* Debug */,
+				VI06000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		VI07000000000002 /* Build configuration list for PBXProject "VoiceInvocationsSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				VI06000000000003 /* Debug */,
+				VI06000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		VI09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/meta-wearables-dat-ios";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		VI0A000000000001 /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = VI09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATCore;
+		};
+		VI0A000000000002 /* MWDATMockDevice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = VI09000000000001 /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios" */;
+			productName = MWDATMockDevice;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = VI08000000000001 /* Project object */;
+}
